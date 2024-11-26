@@ -152,7 +152,54 @@
                         </div>
                         </div>
                     </div>
-                
+                      <title>Contact Information Form</title>
+                    </head>
+                    <body>
+                    
+                      <h1>Submit Your Information  <span class="text--purple">Here</span>!</h1>
+                      
+                      <form action="/submit-your-info" method="POST">
+                        
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                        <br><br>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                        <br><br>
+                    
+                        <label for="phone">Phone Number (XXX-XXX-XXXX):</label>
+                        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required>
+                        <br><br>
+                    
+                        <label for="contact-method">Preferred Contact Method:</label>
+                        <select id="contact-method" name="contact-method" required>
+                          <option value="">--Select an option--</option>
+                          <option value="email">Email</option>
+                          <option value="phone">Phone</option>
+                          <option value="sms">SMS</option>
+                        </select>
+                        <br><br>
+                    
+                        <label for="agree">
+                          <input type="checkbox" id="agree" name="agree" required>
+                          I agree to the terms and conditions
+                        </label>
+                        <br><br>
+                    
+                        <label for="subscribe">
+                          <input type="checkbox" id="subscribe" name="subscribe">
+                          Subscribe to the newsletter
+                        </label>
+                        <br><br>
+                    
+                        <button type="submit">Submit</button>
+                    
+                      </form>
+                    
+                    </body>
+                    </html>
+                                    
 
             </li>
             <!--
